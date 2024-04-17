@@ -1,0 +1,30 @@
+/generate_policy_outline
+user prompt : Generate policy document for AI Policy for Startups Industry in Australia
+country_name : Australia
+files : pdf
+
+
+/generate_policy_subsections
+country_name : Australia
+policy_outline : {result response from /generate_policy_outline}
+policy_title : {title response from /generate_policy_outline}
+files : pdf
+
+
+/generate_concept_note
+country_name : Australia
+user prompt : Generate a concept notes for AI Development Strategy in Startups Industry
+files : pdf
+
+
+/regenerate_subsection
+country_name : Australia
+section_title : {from /generate_policy_details response} 1.1 Background Information
+section_explanation : {from /generate_policy_details response} Australia's startup industry is a vital component of the country's economic landscape, playing a key role in driving innovation and job creation. The emergence of Artificial Intelligence (AI) has opened new frontiers for startups, offering them tools to enhance productivity, solve complex problems, and innovate in ways that were previously unimaginable. The integration of AI technologies into startups is not just a matter of technological upgrade but is becoming a crucial factor for maintaining competitive advantage in a global market. Therefore, acknowledging the transformative impact of AI, there is a pressing need for a comprehensive policy framework that not only encourages the adoption of AI in the startup arena but also carefully considers the ethical, legal, and socio-economic implications associated with its deployment.
+user_prompt : Please regenerate this subsection by mention a sample of disadvantage or problems if there is no government regulations on AI startups, i.e a fraud caused by AI error.
+
+
+/regenerate_outline_or_notes
+country_name : Australia
+doc_value : {current outline or concept notes}
+doc_format : {Enum}
